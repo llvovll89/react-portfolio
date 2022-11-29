@@ -1,0 +1,237 @@
+.home-content {
+    grid-template-columns: 116px repeat(2, 1fr);
+    padding-top: 8.5rem;
+    column-gap: 2rem;
+    align-items: center;
+}
+
+.home-container {
+    row-gap: 7rem;
+}
+
+.home-img {
+    background: url(../../assets/image/김건호.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    box-shadow: inset 0 0 0 8px rgb(255 255 255 / 35%);
+    order: 1;
+    justify-self: center;
+    animation: homeImage 8s ease-in-out infinite 1s;
+    opacity: 0.75;
+}
+
+.home-item {
+    display: grid;
+    grid-template-columns: max-content;
+    row-gap: 1rem;
+}
+
+.home-icons {
+    font-size: 1.3rem;
+    color: #ffffff;
+    transition: 0.4s linear;
+}
+
+.home-icons:hover {
+    border-bottom: 1px solid #ccc;
+    transform: scale(1.1);
+    color: var(--blueBackground);
+    transition: 0.4s linear;
+}
+
+.homedata {
+    color: var(--whiteColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    font-family: var(--korFont);
+}
+
+.home-title {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.home-subtitle {
+    position: relative;
+    font-size: 1.35rem;
+    padding-left: 5.4rem;
+    font-weight: 500;
+    font-family: var(--mainFont);
+}
+
+.home-subtitle::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 1px;
+    left: 0;
+    top: 1rem;
+    background-color: #ccc;
+}
+
+.contact-btn {
+    letter-spacing: 1px;
+    margin-top: 0.5rem;
+    font-family: var(--mainFont);
+    transition: 0.4s linear;
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-btn:hover {
+    background: var(--ligthBlackBackground);
+    transition: 0.4s linear;
+}
+
+.home-desc {
+    max-width: 400px;
+    line-height: 1.5;
+}
+
+.contact-color {
+    position: relative;
+    color: salmon;    
+}
+
+.contact-color::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: salmon;
+    bottom: 0;
+    left: 0;
+}
+
+.home-scroll {
+    margin-left: 9.25rem;
+}
+
+.scroll-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.scroll-btn .scroll-icon{
+    font-size: 1.75rem;
+}
+
+@keyframes homeImage {
+    0% {
+        opacity: 0.75;
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+
+    50% {
+        opacity: 1;
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+
+    100% {
+        opacity: 0.75;
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+}
+
+/* media query */
+@media screen and (max-width: 992px) {
+    .home-content {
+        grid-template-columns: 100px repeat(2, 1fr);
+        column-gap: 1.25rem;
+    }
+
+    .homedata {
+        gap: 0.5rem;
+    }
+
+    .home-subtitle {
+        padding-left: 3.75rem;
+    }
+
+    .home-subtitle::before {
+        width: 42px;
+    }
+
+    .home-desc {
+        max-width: initial;
+    }
+    .home-img {
+        width: 250px;
+        height: 250px;
+        box-shadow: inset 0 0 0 6.5px rgb(255 255 255 / 30%);
+    }
+
+    .home-scroll {
+        margin-left: 7.5rem;
+    }
+ }
+  @media screen and (max-width: 768px) {
+    .home-content {
+        grid-template-columns: 0.5fr 3fr;
+        padding-top: 5.5rem;
+    }
+    .home-img {
+        margin-left: 1.25rem;
+        order: initial;
+        justify-self: initial;
+    }
+    .homedata {
+        grid-column: 1/3;
+        row-gap: 1rem;
+    }
+    .home-img {
+        width: 200px;
+        height: 200px;
+        box-shadow: 0 0 0 4.5px rgb(255 255 255 / 40%);
+    }
+    .home-desc {
+        padding: 0.3rem;
+    }
+    .contact-btn {
+        width: 200px;
+    }
+    .home-btn {
+        display: flex;
+        justify-content: center;
+    }
+    .home-scroll {
+        display: none;
+    }
+  }
+
+  @media screen and (max-width: 380px) {
+    .container {
+      margin: 0 0.85rem;
+    }
+    .home-img {
+        width: 180px;
+        height: 180px;
+    }
+    .homedata {
+        row-gap: 1.2rem;
+    }
+    .home-title {
+        font-size: 1.8rem;
+    }
+    .home-subtitle {
+        font-size: 1.15rem;
+        font-family: var(--appleFont);
+    }
+    .home-desc {
+        text-indent: 5px;
+        font-size: 0.95rem;
+    }
+    .contact-btn {
+        width: 180px;
+        padding: 1rem 1.8rem;
+    }
+  }

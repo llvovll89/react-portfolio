@@ -1,13 +1,120 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* google Font url */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  /* backgrount */
+  --mainBackground: #171618;
+  --lowBlackBackground: #1e1e1e;
+  --ligthBlackBackground: #2f2e2e;
+  --whiteBackgorund: #ffffff;
+  --blueBackground: skyblue;
+
+  /* box-shadow */
+  --shadowLow: rgba(0, 0, 0, 0.22);
+
+  /* color */
+  --whiteColor: #fff;
+  --blackColor: #000;
+  --hoverMidColor: #6d6c6c;
+
+  /* font-style */
+  --mainFont: 'Rajdhani', sans-serif;
+  --korFont: 'Poppins', sans-serif;
+  --appleFont: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  /* z-index */
+  --smZindex: 10;
+  --midZindex: 100;
+  --lgZindex: 1000;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--whiteColor);
+}
+
+ul, li {
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--mainFont);
+}
+
+body {
+  background: var(--mainBackground);
+}
+
+input, button {
+  outline: none;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* 재사용 CSS */
+.section {
+  padding: 6rem 0.2rem;
+}
+
+.container {
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.icons {
+  color: var(--whiteColor);
+  font-size: 1rem;
+}
+
+.btn {
+  padding: 1.25rem 2rem;
+  font-size: 1.1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  display: inline-block;
+  text-align: center;
+}
+
+/* media query */
+@media screen and (max-width: 992px) {
+  .container {
+    margin: 0 1.2rem;
+    padding: 0 0.2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 2rem 0 4rem;
+  }
+}
+@media screen and (max-width: 564px) {
+}
+@media screen and (max-width: 380px) {
+  .container {
+    margin: 0 0.85rem;
+  }
 }
