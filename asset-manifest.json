@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.39e7ee89.css",
-    "main.js": "/static/js/main.e7e86bb0.js",
-    "static/media/김건호.jpg": "/static/media/김건호.b981161cf94fb47c4e45.jpg",
-    "index.html": "/index.html",
-    "main.39e7ee89.css.map": "/static/css/main.39e7ee89.css.map",
-    "main.e7e86bb0.js.map": "/static/js/main.e7e86bb0.js.map"
+    "main.css": "/react-portfolio/static/css/main.dc187241.css",
+    "main.js": "/react-portfolio/static/js/main.db1e615b.js",
+    "static/media/김건호.jpg": "/react-portfolio/static/media/김건호.b981161cf94fb47c4e45.jpg",
+    "index.html": "/react-portfolio/index.html",
+    "main.dc187241.css.map": "/react-portfolio/static/css/main.dc187241.css.map",
+    "main.db1e615b.js.map": "/react-portfolio/static/js/main.db1e615b.js.map"
   },
   "entrypoints": [
-    "static/css/main.39e7ee89.css",
-    "static/js/main.e7e86bb0.js"
+    "static/css/main.dc187241.css",
+    "static/js/main.db1e615b.js"
   ]
 }
