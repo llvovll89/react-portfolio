@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.39e7ee89.css",
+    "main.js": "/static/js/main.e7e86bb0.js",
+    "static/media/김건호.jpg": "/static/media/김건호.b981161cf94fb47c4e45.jpg",
+    "index.html": "/index.html",
+    "main.39e7ee89.css.map": "/static/css/main.39e7ee89.css.map",
+    "main.e7e86bb0.js.map": "/static/js/main.e7e86bb0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.39e7ee89.css",
+    "static/js/main.e7e86bb0.js"
+  ]
+}
