@@ -7,7 +7,7 @@ import {
   BiMessageSquareCheck,
   BiImage,
 } from 'react-icons/bi';
-import { TbBrandJavascript } from 'react-icons/tb';
+import {Gi3DGlasses} from 'react-icons/gi';
 import { AiFillCloseCircle } from 'react-icons/ai';
 import { RiAppsLine } from 'react-icons/ri';
 import { Link } from 'react-router-dom';
@@ -16,16 +16,16 @@ function Header() {
   const [showNav, setSHowNav] = useState(false);
   const toggleBtn = () => {
     setSHowNav(!false);
-  }
+  };
   const closeBtn = () => {
     setSHowNav(false);
-  }
+  };
 
   return (
     <header className="header">
       <nav className="nav container">
         <Link to="/" className="nav-logo">
-          김건호<span className='logo-eng'>Portfolio</span>
+          FrontEnd <br/> <span className="logo-eng">Developer</span>
         </Link>
 
         <div className={showNav ? 'nav-container show-nav' : 'nav-container'}>
@@ -46,8 +46,8 @@ function Header() {
 
             <li className="nav-item">
               <Link to="/" className="nav-link">
-                <TbBrandJavascript className="icons nav-icon" />
-                JS
+                <Gi3DGlasses className="icons nav-icon" />
+                Design
               </Link>
             </li>
 
@@ -66,7 +66,7 @@ function Header() {
             </li>
           </ul>
 
-          <AiFillCloseCircle className="icons nav-close" onClick={closeBtn}/>
+          <AiFillCloseCircle className="icons nav-close" onClick={closeBtn} />
         </div>
 
         <div className="nav-toggle" onClick={toggleBtn}>

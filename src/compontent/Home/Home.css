@@ -35,11 +35,16 @@
     transition: 0.4s linear;
 }
 
+.overevnet {
+    background: #fff;
+}
+
 .home-icons:hover {
     border-bottom: 1px solid #ccc;
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
     color: var(--blueBackground);
     transition: 0.4s linear;
+    animation: mouseOver 2s ease-in-out infinite;
 }
 
 .homedata {
@@ -142,8 +147,17 @@
     }
 }
 
+@keyframes mouseOver {
+    0% {
+        transform: translateX(25%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
 /* media query */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
     .home-content {
         grid-template-columns: 100px repeat(2, 1fr);
         column-gap: 1.25rem;
@@ -186,7 +200,7 @@
     }
     .homedata {
         grid-column: 1/3;
-        row-gap: 1rem;
+        row-gap: 1.5rem;
     }
     .home-img {
         width: 200px;
@@ -194,7 +208,10 @@
         box-shadow: 0 0 0 4.5px rgb(255 255 255 / 40%);
     }
     .home-desc {
+        text-indent: 5px;
+        font-size: 0.95rem;
         padding: 0.3rem;
+        line-height: 1.65;
     }
     .contact-btn {
         width: 200px;
@@ -225,10 +242,6 @@
     .home-subtitle {
         font-size: 1.15rem;
         font-family: var(--appleFont);
-    }
-    .home-desc {
-        text-indent: 5px;
-        font-size: 0.95rem;
     }
     .contact-btn {
         width: 180px;

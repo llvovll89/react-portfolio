@@ -1,0 +1,134 @@
+.about-container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 4rem;
+    color: var(--whiteColor);
+}
+
+.titlebox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--whiteColor);
+    margin-bottom: 2rem;
+}
+
+.about-title {
+    font-size: 2.5rem;
+}
+
+.about-subtitle {
+    font-size: 1.2rem;
+}
+
+.about-img {
+    width: 350px;
+    border-radius: 12px;
+    justify-self: center;
+}
+
+.about-info {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.info-title {
+    position: relative;
+}
+
+.info-title::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: var(--whiteColor);
+    bottom: -5px;
+    left: 0;
+}
+
+.about-content {
+    border: 1px solid #ccc;
+    border-radius: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.75rem;
+}
+
+.info-sub {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.info-subtitle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.info-icons .icons{
+    margin: 0 4px;
+}
+
+.about-desc {
+    margin: 1.5rem 0;
+    text-align: left;
+}
+
+.aboutdata {
+    text-align: center;
+}
+
+.aboutdata a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+/* media query */
+@media screen and (max-width: 1024px) {
+    .about-container {
+        grid-template-columns: 1fr;
+        row-gap: 2.5rem;
+    }
+    .about-img {
+        width: 220px;
+    }
+    .about-content {
+        padding: 0.75rem 0.5rem;
+    }
+    .aboutdata {
+        text-align: center;
+    }
+    .about-info {
+        justify-content: center;
+    }
+    .about-desc {
+        padding: 0.5rem;
+    }
+  }
+  @media screen and (max-width: 564px) {
+    .info-title {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .info-sub {
+        font-size: 0.95rem;
+    }
+    .about-desc {
+        text-indent: 3px;
+        padding: 0 0.5rem;
+        line-height: 1.35;
+        font-size: 0.95rem;
+        margin: 1.8rem 0;
+    }
+    .btn-down {
+        font-size: 1rem;
+    }
+}
