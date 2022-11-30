@@ -10,7 +10,7 @@ function Item() {
       <Link to="#" target="_blank" className="icons social">
         <AiOutlineInstagram className="home-icons" />
       </Link>
-      <Link to="#" target="_blank" className="icons social">
+      <Link to="https://github.com/llvovll89/react-portfolio" target="_blank" className="icons social">
         <AiOutlineGithub className="home-icons" />
       </Link>
       <Link to="#" target="_blank" className="icons social">

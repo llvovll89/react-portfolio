@@ -1,0 +1,11 @@
+.mode {
+    position: fixed;
+    top: 20rem;
+    right: 1.5rem;
+    width: 50px;
+    height: 50px;
+}
+
+.mode-btn {
+    cursor: pointer;
+}
