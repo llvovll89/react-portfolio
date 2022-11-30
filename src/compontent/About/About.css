@@ -80,8 +80,23 @@
     text-align: left;
 }
 
+.about-btn {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 12% 20% 19% 15%;
+}
+
+.btn-down {
+    padding: 1.1rem 2.5rem;
+    font-size: 1.1rem;
+    display: inline-block;
+}
+
 .aboutdata {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .aboutdata a {

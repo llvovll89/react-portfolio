@@ -25,10 +25,12 @@ function About() {
             obcaecati atque dolorem libero magni.
           </p>
 
-          <Link to="/" className="btn btn-down">
-            이력서
-            <BsDownload className="icons download" />
-          </Link>
+          <div className="about-btn">
+            <Link to="/" className="btn-down">
+              이력서
+              <BsDownload className="icons download" />
+            </Link>
+          </div>
         </div>
       </div>
     </section>
