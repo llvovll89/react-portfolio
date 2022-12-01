@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.af782866.css",
-    "main.js": "/react-portfolio/static/js/main.906695ca.js",
+    "main.css": "/react-portfolio/static/css/main.801e5887.css",
+    "main.js": "/react-portfolio/static/js/main.04014a5e.js",
     "static/media/project-1.png": "/react-portfolio/static/media/project-1.5cdab63c92df4fcc8c13.png",
+    "static/media/landingimg.jpg": "/react-portfolio/static/media/landingimg.f239b99ed19e5dfce582.jpg",
     "static/media/김건호.jpg": "/react-portfolio/static/media/김건호.b981161cf94fb47c4e45.jpg",
     "static/media/about.png": "/react-portfolio/static/media/about.3853ab1c9aa873075ab1.png",
     "index.html": "/react-portfolio/index.html",
-    "main.af782866.css.map": "/react-portfolio/static/css/main.af782866.css.map",
-    "main.906695ca.js.map": "/react-portfolio/static/js/main.906695ca.js.map"
+    "main.801e5887.css.map": "/react-portfolio/static/css/main.801e5887.css.map",
+    "main.04014a5e.js.map": "/react-portfolio/static/js/main.04014a5e.js.map"
   },
   "entrypoints": [
-    "static/css/main.af782866.css",
-    "static/js/main.906695ca.js"
+    "static/css/main.801e5887.css",
+    "static/js/main.04014a5e.js"
   ]
 }
