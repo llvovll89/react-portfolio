@@ -1,5 +1,6 @@
 import React from 'react';
 import { BsSun } from 'react-icons/bs';
+import './Mode.css'
 
 function Mode() {
   return (
