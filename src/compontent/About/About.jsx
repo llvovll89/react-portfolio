@@ -4,7 +4,7 @@ import AboutImg from '../../assets/image/about.png';
 import Information from './Information';
 import { BsDownload } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
-import { animate, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 function About() {
   const fadeRotate = {

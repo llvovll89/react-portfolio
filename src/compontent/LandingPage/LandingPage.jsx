@@ -1,31 +1,11 @@
 import React from 'react';
 import './LandingPage.css';
 import { motion } from 'framer-motion';
-import LandingImage from './LandingImage';
 import { Link } from 'react-router-dom';
 import { AiOutlineInstagram, AiOutlineGithub } from 'react-icons/ai';
 import { SiNotion } from 'react-icons/si';
 
-import Mainimg from '../../assets/image/LandingImg/landingimg.jpg';
-
 function Main() {
-  const fadeInUp = {
-    initial: {
-      x: 150,
-      opacity: 0,
-    },
-    animate: {
-      x: 0,
-      opacity: 1,
-
-      transition: {
-        duration: 1,
-        delay: 0.5,
-        ease: 'easeInOut',
-      },
-    },
-  };
-
   const fadeInLeft = {
     initial: {
       x: -150,
@@ -46,12 +26,15 @@ function Main() {
   return (
     <div className="landingpage" id="landingpage">
       <motion.div
-        variants={fadeInUp}
-        initial="initial"
-        animate="animate"
         className="landing-img"
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 1.2,
+          delay: 1.2,
+          ease: [0, 0.71, 0.2, 1.01],
+        }}
       >
-        <LandingImage alt="img.." classname="mainimg" imgurl={Mainimg} />
       </motion.div>
 
       <motion.div
@@ -61,7 +44,7 @@ function Main() {
         className="landing-text"
       >
         <div className="maintext">
-          <h3>01</h3>
+          <h3>I`m</h3>
           <span>Kim Geon Ho</span>
         </div>
 
@@ -70,15 +53,19 @@ function Main() {
           <span>Developer</span>
         </div>
         <div className="social">
-        <Link to="#" target="_blank" className="icons social">
-        <AiOutlineInstagram className="social-icons" />
-      </Link>
-      <Link to="https://github.com/llvovll89/react-portfolio" target="_blank" className="icons social">
-        <AiOutlineGithub className="social-icons" />
-      </Link>
-      <Link to="#" target="_blank" className="icons social">
-        <SiNotion className="social-icons" />
-      </Link>
+          <Link to="#" target="_blank" className="icons social">
+            <AiOutlineInstagram className="social-icons" />
+          </Link>
+          <Link
+            to="https://github.com/llvovll89/react-portfolio"
+            target="_blank"
+            className="icons social"
+          >
+            <AiOutlineGithub className="social-icons" />
+          </Link>
+          <Link to="#" target="_blank" className="icons social">
+            <SiNotion className="social-icons" />
+          </Link>
         </div>
 
         <Link className="link-btn" to="/home">
