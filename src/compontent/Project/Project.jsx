@@ -5,6 +5,7 @@ import './Project.css';
 import img1 from '../../assets/image/project-1.png';
 import Slider from 'react-slick';
 import data from '../../db/data.json';
+import { motion } from 'framer-motion';
 
 const Project = () => {
   const settings = {
@@ -17,29 +18,32 @@ const Project = () => {
   };
 
   return (
-    <section className="project section" id="project">
-    <div className="projeact-titlebox">
-    <h2 className="project-title">Project</h2>
-    <span className="project-subtitle">My-project</span>
-    </div>
-    <Slider {...settings}>
+    <section
+      className="project section"
+      id="project"
+    >
+      <div className="projeact-titlebox">
+        <h2 className="project-title">Project</h2>
+        <span className="project-subtitle">My-project</span>
+      </div>
+      <Slider {...settings}>
         <div className="project-container container grid">
           <div className="project-img scaleup">
             <img src={img1} alt="project-1" />
           </div>
-          <ProjectItem num={"01"}/>
+          <ProjectItem num={'01'} />
         </div>
         <div className="project-container container grid">
           <div className="project-img scaleup">
             <img src={img1} alt="project-1" />
           </div>
-          <ProjectItem num={"02"}/>
+          <ProjectItem num={'02'} />
         </div>
         <div className="project-container container grid">
           <div className="project-img scaleup">
             <img src={img1} alt="project-1" />
           </div>
-          <ProjectItem num={"03"}/>
+          <ProjectItem num={'03'} />
         </div>
       </Slider>
     </section>

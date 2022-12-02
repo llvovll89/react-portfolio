@@ -4,10 +4,35 @@ import AboutImg from '../../assets/image/about.png';
 import Information from './Information';
 import { BsDownload } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
+import { animate, motion } from 'framer-motion';
 
 function About() {
+  const fadeRotate = {
+    initial: {
+      rotate: 120,
+      opacity: 0
+    },
+    animate : {
+      rotate: 0,
+      opacity: 1,
+    transition: {
+      delay: 3,
+      ease: 'easeOut',
+      duration: 2,
+    }
+    }
+  }
+
   return (
-    <section className="about section" id="about">
+    <motion.section
+      className="about section"
+      id="about"
+      variants={fadeRotate}
+      animate="animate"
+      initial="initial"
+      transition="transition"
+
+    >
       <div className="titlebox">
         <h2 className="about-title">About Me</h2>
         <span className="about-subtitle">My introduction</span>
@@ -33,7 +58,7 @@ function About() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 
