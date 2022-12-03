@@ -1,8 +1,8 @@
 .landingpage {
   background: var(--whiteColor);
-  width: 90vw;
+  width: 92vw;
   margin: 0 auto;
-  height: 90vh;
+  height: 92vh;
   display: grid;
   place-items: center;
   overflow: hidden;
@@ -30,16 +30,17 @@
   justify-content: center;
   width: 100%;
   row-gap: 2.5rem;
-  padding-left: 10rem;
+  padding: 0 6rem;
   height: 100%;
 }
 
 .link-btn {
   display: flex;
+  max-width: 200px;
   border: 1px solid #ccc;
   padding: 1.2rem 2.5rem;
-  width: 180px;
   background: skyblue;
+  justify-content: center;
   border-radius: 3px;
 }
 
@@ -58,16 +59,6 @@
   font-size: 5rem;
 }
 
-.midtext h4 {
-  position: relative;
-  font-size: 4rem;
-  font-weight: 500;
-}
-
-.midtext span {
-  font-size: 3.5rem;
-}
-
 .midtext {
   position: relative;
 }
@@ -81,6 +72,17 @@
   position: absolute;
 }
 
+.midtext h4 {
+  position: relative;
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.midtext span {
+  font-size: 3.5rem;
+}
+
+
 .social {
   display: flex;
   align-items: center;
@@ -93,53 +95,77 @@
 }
 
 /* media query */
+@media screen and (max-width: 1280px) {
+  .landing-text {
+    padding: 0 4rem;
+  }
+  .maintext h3 {
+    font-size: 3rem;
+  }
+  .maintext span {
+    font-size: 4rem;
+  }
+  .midtext h4 {
+    font-size: 3rem;
+  }
+  .midtext span {
+    font-size: 2.5rem;
+  }
+  .social .social-icons {
+    font-size: 1.8rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .landingpage {
     display: flex;
     flex-direction: column;
     width: 100%;
     max-width: 95vw;
-    height: 99vh;
+    height: 98vh;
     border-radius: 9px;
   }
 
-  .mainimg {
-    height: 100%;
-  }
-
   .landing-text {
-    margin-top: -5rem;
-    padding: 0 1rem;
+    padding: 1rem 2rem;
     row-gap: 0.5rem;
   }
+
+  .maintext, .midtext {
+    padding: 1rem;
+  }
+
   .maintext h3 {
     font-size: 2.25rem;
     font-weight: 500;
   }
-  
+
   .maintext span {
     font-weight: 700;
     font-size: 2.6rem;
   }
-  
+
   .midtext h4 {
     position: relative;
     font-size: 2rem;
     font-weight: 500;
   }
-  
+
   .midtext span {
     font-size: 1.78rem;
   }
+
   .social {
-    column-gap: 1.5rem;
+    padding: 0 1rem;
   }
+
   .social .social-icons {
     font-size: 1.2rem;
   }
+
   .link-btn {
-    position: absolute;
-    right: 20px;
-    bottom: 20%;
+    margin: 0.6rem 0;
+    padding: 1rem 2rem;
+    max-width: 98vw;
   }
 }
