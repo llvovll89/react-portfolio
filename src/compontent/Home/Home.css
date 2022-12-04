@@ -87,17 +87,21 @@
 
 .home-btn {
     letter-spacing: 1px;
-    margin-top: 0.5rem;
     font-family: var(--mainFont);
     transition: 0.4s linear;
-    display: flex;
-    gap: 0.4rem;
-    align-items: center;
+    width: max-content;
+    margin-top: 1rem;
 }
 
 .home-btn:hover {
-    background: var(--ligthBlackBackground);
+    background: rgb(67, 62, 62);
     transition: 0.4s linear;
+}
+
+.home-linkBtn {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
 }
 
 .home-desc {
@@ -221,13 +225,6 @@
         padding: 0.3rem;
         line-height: 1.65;
     }
-    .home-btn {
-        width: 200px;
-    }
-    .home-btn {
-        display: flex;
-        justify-content: center;
-    }
     .home-scroll {
         display: none;
     }
@@ -250,9 +247,5 @@
     .home-subtitle {
         font-size: 1.15rem;
         font-family: var(--appleFont);
-    }
-    .home-btn {
-        width: 180px;
-        padding: 1rem 1.8rem;
     }
   }

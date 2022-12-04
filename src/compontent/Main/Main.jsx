@@ -4,7 +4,6 @@ import Home from '../Home/Home';
 import About from '../About/About';
 import Project from '../Project/Project';
 import Scroll from '../Scroll/Scroll';
-import Mode from '../Mode/Mode';
 import Contact from '../Contact/Contact';
 
 const Main = () => {
@@ -16,7 +15,6 @@ const Main = () => {
         <Project />
         <Contact /> 
         <Scroll />
-        <Mode /> 
     </>
   )
 }

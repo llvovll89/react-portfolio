@@ -16,7 +16,7 @@ function Homedata() {
         </p>
 
         <div className="home-btn">
-        <Link to='/contact' className='btn home-btn'>
+        <Link to='/contact' className='btn home-linkBtn'>
             Contact <HiOutlineCursorClick className='icons'/>
         </Link>
         </div>
