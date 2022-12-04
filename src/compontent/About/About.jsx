@@ -9,16 +9,17 @@ import { motion } from 'framer-motion';
 function About() {
   const fadeRotate = {
     initial: {
-      rotate: 120,
-      opacity: 0
+      opacity: 0,
+      scale: 0.5,
     },
     animate : {
-      rotate: 0,
       opacity: 1,
+      scale: 1,
     transition: {
-      delay: 3,
-      ease: 'easeOut',
-      duration: 2,
+      type: "spring",
+      duration: 0.5,
+      bounce: 0.5,
+      delay: 2.5, 
     }
     }
   }

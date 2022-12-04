@@ -11,12 +11,12 @@ function Homedata() {
         </h1>
         <p className="home-subtitle">FrontEnd Developer</p>
         <p className="home-desc">
-            안녕하세요, 저는 웹 프론트엔드 신입 개발자 김건호입니다.
-            저의 포트폴리오를 보고 마음에 드신다면 <span className='contact-color'>Contact</span> 해주시기 바랍니다!
+            Hello, I'm a new front-end developer <br/>
+            저의 포트폴리오를 보고 마음에 드신다면 <span className='contact-color'> <br/>Contact</span> 해주시기 바랍니다!
         </p>
 
         <div className="home-btn">
-        <Link to='/contact' className='btn contact-btn'>
+        <Link to='/contact' className='btn home-btn'>
             Contact <HiOutlineCursorClick className='icons'/>
         </Link>
         </div>

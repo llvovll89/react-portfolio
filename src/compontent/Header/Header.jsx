@@ -31,38 +31,39 @@ function Header() {
         <div className={showNav ? 'nav-container show-nav' : 'nav-container'}>
           <ul className="nav-list grid">
             <li className="nav-item">
-              <Link to="/" className="nav-link">
+              <a href="/" className="nav-link">
                 <BiHomeHeart className="icons nav-icon" />
                 Home
-              </Link>
+              </a>
             </li>
 
             <li className="nav-item">
-              <Link to="/" className="nav-link">
+              <a href="#about" className="nav-link">
                 <BiUserCircle className="icons nav-icon" />
                 About
-              </Link>
+              </a>
             </li>
 
             <li className="nav-item">
-              <Link to="/" className="nav-link">
-                <Gi3DGlasses className="icons nav-icon" />
-                Design
-              </Link>
-            </li>
-
-            <li className="nav-item">
-              <Link to="/" className="nav-link">
+              <a href="#project" className="nav-link">
                 <BiImage className="icons nav-icon" />
                 Projects
-              </Link>
+              </a>
             </li>
 
             <li className="nav-item">
-              <Link to="/" className="nav-link">
+              <a href="#contact" className="nav-link">
+                <Gi3DGlasses className="icons nav-icon" />
+                Contact
+              </a>
+            </li>
+
+
+            <li className="nav-item">
+              <a href="/" className="nav-link">
                 <BiMessageSquareCheck className="icons nav-icon" />
                 Contact
-              </Link>
+              </a>
             </li>
           </ul>
 

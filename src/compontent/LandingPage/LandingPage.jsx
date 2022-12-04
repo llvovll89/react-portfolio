@@ -91,9 +91,9 @@ function Main() {
           </Link>
         </div>
 
-        <Link className="link-btn" to="/home">
-          <div className="link">Portfolio Go</div>
-        </Link>
+
+        <Link className="link-btn" to="/home" data-text="Port-Folio Go">Port-Folio Go</Link>
+        
       </motion.div>
     </div>
   );

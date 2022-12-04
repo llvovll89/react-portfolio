@@ -62,14 +62,14 @@
 }
 
 .home-title {
-    font-size: 2rem;
+    font-size: 3rem;
     display: flex;
     align-items: center;
 }
 
 .home-subtitle {
     position: relative;
-    font-size: 1.35rem;
+    font-size: 1.6rem;
     padding-left: 5.4rem;
     font-weight: 500;
     font-family: var(--mainFont);
@@ -85,7 +85,7 @@
     background-color: #ccc;
 }
 
-.contact-btn {
+.home-btn {
     letter-spacing: 1px;
     margin-top: 0.5rem;
     font-family: var(--mainFont);
@@ -93,15 +93,15 @@
     display: flex;
     gap: 0.4rem;
     align-items: center;
-    justify-content: center;
 }
 
-.contact-btn:hover {
+.home-btn:hover {
     background: var(--ligthBlackBackground);
     transition: 0.4s linear;
 }
 
 .home-desc {
+    font-size: 1.25rem;
     max-width: 400px;
     line-height: 1.5;
 }
@@ -194,6 +194,9 @@
     }
  }
   @media screen and (max-width: 768px) {
+    .home {
+        justify-content: center;
+    }
     .home-content {
         grid-template-columns: 0.5fr 3fr;
         padding-top: 5.5rem;
@@ -218,7 +221,7 @@
         padding: 0.3rem;
         line-height: 1.65;
     }
-    .contact-btn {
+    .home-btn {
         width: 200px;
     }
     .home-btn {
@@ -248,7 +251,7 @@
         font-size: 1.15rem;
         font-family: var(--appleFont);
     }
-    .contact-btn {
+    .home-btn {
         width: 180px;
         padding: 1rem 1.8rem;
     }

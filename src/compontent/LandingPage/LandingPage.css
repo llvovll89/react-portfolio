@@ -35,18 +35,62 @@
 }
 
 .link-btn {
-  display: flex;
-  max-width: 200px;
+  position: relative;
+  width: max-content;
+  height: max-content;
   border: 1px solid #ccc;
-  padding: 1.2rem 2.5rem;
-  background: skyblue;
-  justify-content: center;
-  border-radius: 3px;
+  padding: 1.2rem 2.25rem;
+  border-radius: 12px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-align: center;
+  height: max-content;
+  text-transform: uppercase;
+  font-size: 1.2rem;
 }
 
-.link {
-  color: var(--whiteColor);
-  font-size: 1.2rem;
+.link-btn::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: skyblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: 0.5s;
+  transform-origin: bottom;
+  transform: translatey(-100%) rotatex(90deg);
+}
+
+.link-btn:hover::before {
+  transform: translatey(0) rotatex(0deg);
+}
+
+.link-btn::after {
+  content: attr(data-text);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: skyblue;
+  color: #fff;
+  transition: 0.5s;
+  transform-origin: top;
+  transform: translatey(0) rotatex(0deg);
+}
+
+.link-btn:hover::after {
+  transform: translatey(100%) rotatex(90deg);
 }
 
 .maintext h3 {
@@ -99,18 +143,23 @@
   .landing-text {
     padding: 0 4rem;
   }
+
   .maintext h3 {
     font-size: 3rem;
   }
+
   .maintext span {
     font-size: 4rem;
   }
+
   .midtext h4 {
     font-size: 3rem;
   }
+
   .midtext span {
     font-size: 2.5rem;
   }
+
   .social .social-icons {
     font-size: 1.8rem;
   }
