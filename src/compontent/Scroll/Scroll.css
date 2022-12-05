@@ -6,7 +6,7 @@
     background: var(--ligthBlackBackground);
     transition: all 0.5s linear;
     overflow: hidden;
-    border-radius: 50%;
+    border-radius: 6px;
 }
 
 .scroll-up {
@@ -56,12 +56,12 @@
 /* media query */
 @media screen and (max-width: 1024px) {
     .scroll-arr {
-        right: 1.5rem;
+        right: 1rem;
     }
   }
   @media screen and (max-width: 768px) {
-   .scroll-arr.scrollup-show {
-        bottom: 4rem;
+   .scrollup-show {
+        bottom: 93%;
     }
   }
   @media screen and (max-width: 380px) {

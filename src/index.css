@@ -73,6 +73,9 @@ img {
 /* 재사용 CSS */
 .section {
   padding: 6rem 0 2rem;
+  min-height: 100vh;
+  min-height: -webkit-fill-available; 
+  height: fill-available;
 }
 
 .container {

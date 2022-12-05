@@ -130,9 +130,12 @@
     }
 
     .nav-toggle .icons {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
         cursor: pointer;
         font-weight: 700;
+    }
+    .nav-toggle {
+        padding-top: 3px;
     }
 
     .nav-icon,

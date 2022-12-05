@@ -6,6 +6,7 @@ import Scroll from './Scroll';
 import { motion } from 'framer-motion';
 
 function Home() {
+
   const fadeInUp = {
     initial: {
       x: 150,
