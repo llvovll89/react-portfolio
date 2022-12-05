@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.bc01ed1e.css",
+    "main.css": "/react-portfolio/static/css/main.4819e718.css",
     "main.js": "/react-portfolio/static/js/main.588f815d.js",
     "static/media/project-1.png": "/react-portfolio/static/media/project-1.5cdab63c92df4fcc8c13.png",
     "static/media/landingimg.jpg": "/react-portfolio/static/media/landingimg.f239b99ed19e5dfce582.jpg",
     "static/media/김건호.jpg": "/react-portfolio/static/media/김건호.b981161cf94fb47c4e45.jpg",
     "static/media/about.png": "/react-portfolio/static/media/about.3853ab1c9aa873075ab1.png",
     "index.html": "/react-portfolio/index.html",
-    "main.bc01ed1e.css.map": "/react-portfolio/static/css/main.bc01ed1e.css.map",
+    "main.4819e718.css.map": "/react-portfolio/static/css/main.4819e718.css.map",
     "main.588f815d.js.map": "/react-portfolio/static/js/main.588f815d.js.map"
   },
   "entrypoints": [
-    "static/css/main.bc01ed1e.css",
+    "static/css/main.4819e718.css",
     "static/js/main.588f815d.js"
   ]
 }
