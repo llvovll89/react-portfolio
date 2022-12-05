@@ -4,7 +4,6 @@ import './Header.css';
 import {
   BiHomeHeart,
   BiUserCircle,
-  BiMessageSquareCheck,
   BiImage,
 } from 'react-icons/bi';
 import {Gi3DGlasses} from 'react-icons/gi';
@@ -31,10 +30,10 @@ function Header() {
         <div className={showNav ? 'nav-container show-nav' : 'nav-container'}>
           <ul className="nav-list grid">
             <li className="nav-item">
-              <Link to="/home" className="nav-link">
+              <a href="#" className="nav-link">
                 <BiHomeHeart className="icons nav-icon" />
                 Home
-              </Link>
+              </a>
             </li>
 
             <li className="nav-item">

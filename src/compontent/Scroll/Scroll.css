@@ -6,7 +6,7 @@
     background: var(--ligthBlackBackground);
     transition: all 0.5s linear;
     overflow: hidden;
-    border-radius: 12%;
+    border-radius: 50%;
 }
 
 .scroll-up {
@@ -48,7 +48,7 @@
     transform: translateX(-22%) translateY(-25%) rotate(45deg);
 }
 
-.scroll-arr.scrollup-show {
+.scrollup-show {
     bottom: 3.5rem;
     transition: all 0.4s linear;
 }

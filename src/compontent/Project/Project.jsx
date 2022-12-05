@@ -2,12 +2,10 @@ import React, { useState } from 'react';
 import ProjectItem from './ProjectItem';
 import img1 from '../../assets/image/project-1.png';
 import Slider from 'react-slick';
-import Header from '../Header/Header';
 import { motion } from 'framer-motion';
-import Projectgrid from './Project-grid';
-import Img1 from '../../assets/image/project-1.png';
 import 'slick-carousel/slick/slick.css';
 import './Project.css';
+import ScrollBtn from '../Scroll/ScrollBtn';
 
 const Project = () => {
   const [view, setView] = useState(false);
@@ -50,7 +48,7 @@ const Project = () => {
       initial="initial"
       animate="animate"
     >
-      <Header />
+      <ScrollBtn />
       <div className="projeact-titlebox">
         <h2 className="project-title">Project</h2>
         <span className="project-subtitle">My-project</span>
@@ -97,9 +95,7 @@ const Project = () => {
           />
         </div>
       </Slider>
-      <Projectgrid imgurl={Img1} />
-    </motion.section>
-  );
-};
-
+      </motion.section>
+      );
+    };
 export default Project;
