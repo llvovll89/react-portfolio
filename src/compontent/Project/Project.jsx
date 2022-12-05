@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import ProjectItem from './ProjectItem';
-import 'slick-carousel/slick/slick.css';
-import './Project.css';
 import img1 from '../../assets/image/project-1.png';
 import Slider from 'react-slick';
-import Header from '../Header/Header'
-import {motion} from 'framer-motion';
+import Header from '../Header/Header';
+import { motion } from 'framer-motion';
 import Projectgrid from './Project-grid';
+import Img1 from '../../assets/image/project-1.png';
+import 'slick-carousel/slick/slick.css';
+import './Project.css';
 
 const Project = () => {
   const [view, setView] = useState(false);
@@ -42,17 +43,26 @@ const Project = () => {
   };
 
   return (
-    <motion.section className="project section" id="project"       variants={fadeInLeft}
-    initial="initial"
-    animate="animate">
-    <Header /> 
+    <motion.section
+      className="project section"
+      id="project"
+      variants={fadeInLeft}
+      initial="initial"
+      animate="animate"
+    >
+      <Header />
       <div className="projeact-titlebox">
         <h2 className="project-title">Project</h2>
         <span className="project-subtitle">My-project</span>
       </div>
       <Slider {...settings}>
-        <div className="project-container container grid"> 
-        <div className={view ? "project-img scaleup mist" : "project-img scaleup"} onClick={handleClick}>
+        <div className="project-container container grid">
+          <div
+            className={
+              view ? 'project-img scaleup mist' : 'project-img scaleup'
+            }
+            onClick={handleClick}
+          >
             <img src={img1} alt="project-1" />
           </div>
           <ProjectItem
@@ -61,7 +71,11 @@ const Project = () => {
           />
         </div>
         <div className="project-container container grid" onClick={handleClick}>
-          <div className={view ? "project-img scaleup mist" : "project-img scaleup"}>
+          <div
+            className={
+              view ? 'project-img scaleup mist' : 'project-img scaleup'
+            }
+          >
             <img src={img1} alt="project-1" />
           </div>
           <ProjectItem
@@ -70,7 +84,11 @@ const Project = () => {
           />
         </div>
         <div className="project-container container grid" onClick={handleClick}>
-          <div className={view ? "project-img scaleup mist" : "project-img scaleup"}>
+          <div
+            className={
+              view ? 'project-img scaleup mist' : 'project-img scaleup'
+            }
+          >
             <img src={img1} alt="project-1" />
           </div>
           <ProjectItem
@@ -79,7 +97,7 @@ const Project = () => {
           />
         </div>
       </Slider>
-      <Projectgrid />
+      <Projectgrid imgurl={Img1} />
     </motion.section>
   );
 };
