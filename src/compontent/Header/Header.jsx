@@ -31,10 +31,10 @@ function Header() {
         <div className={showNav ? 'nav-container show-nav' : 'nav-container'}>
           <ul className="nav-list grid">
             <li className="nav-item">
-              <a href="/" className="nav-link">
+              <Link to="/home" className="nav-link">
                 <BiHomeHeart className="icons nav-icon" />
                 Home
-              </a>
+              </Link>
             </li>
 
             <li className="nav-item">
@@ -45,23 +45,15 @@ function Header() {
             </li>
 
             <li className="nav-item">
-              <a href="#project" className="nav-link">
+              <Link to="/project" className="nav-link">
                 <BiImage className="icons nav-icon" />
-                Projects
-              </a>
+                Project
+              </Link>
             </li>
 
             <li className="nav-item">
               <a href="#contact" className="nav-link">
                 <Gi3DGlasses className="icons nav-icon" />
-                Contact
-              </a>
-            </li>
-
-
-            <li className="nav-item">
-              <a href="/" className="nav-link">
-                <BiMessageSquareCheck className="icons nav-icon" />
                 Contact
               </a>
             </li>

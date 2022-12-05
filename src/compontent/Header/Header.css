@@ -4,10 +4,10 @@
     top: 0;
     left: 0;
     z-index: var(--midZindex);
-    padding: 0.3rem;
 }
 
 .nav {
+    max-width: 82vw;
     height: 4.5rem;
     display: flex;
     justify-content: space-between;
@@ -20,16 +20,11 @@
 
 .nav-logo {
     position: relative;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .nav-logo, .nav-toggle {
-    font-weight: 700;
     font-family: var(--mainFont);
-}
-
-.logo-eng {
-    font-weight: 600;
 }
 
 .nav-logo::before {
@@ -52,7 +47,7 @@
     display: flex;
     flex-direction: column;
     transition: 0.3s linear;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
 }
 
 .nav-toggle, .nav-close, .nav-icon {
@@ -72,7 +67,7 @@
         bottom: 0;
         right: 0;
         width: max-content;
-        padding: 0;
+        
     }
 
     .nav {
@@ -134,6 +129,7 @@
     .nav-toggle {
         font-size: 1.1rem;
         cursor: pointer;
+        font-weight: 700;
     }
 
     .nav-icon,
